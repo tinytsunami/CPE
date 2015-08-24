@@ -2,12 +2,12 @@
 
 int main()
 {
-int iCountTest = 0;
-int iNumberA = 0;
-int iNumberB = 0;
-int iAnser = 0;
-int i = 0;//Loop Used
-int j = 0;//Loop Used
+int iCountTest;
+int iNumberA;
+int iNumberB;
+int iAnser;
+int i;//Loop Used
+int j;//Loop Used
 
 scanf_s("%d",&iCountTest);
 for (i = 0; i < iCountTest; i++)
