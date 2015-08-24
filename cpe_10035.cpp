@@ -4,12 +4,14 @@
 int add(int iNumberA, int iNumberB)
 {
 int arriNumber[2] = { (iNumberA + iNumberB) / 10, (iNumberA + iNumberB) % 10 };
+
 return *arriNumber;
 }
 
 int getDigit(int iNumber)
 {
 int iDigit = 0;
+
 while ((iNumber / pow(10, iDigit)) >= 1)
     iDigit++;
 return iDigit;
@@ -18,6 +20,7 @@ return iDigit;
 void createEachNumber(int *iEachNumber, int iNumber)
 {
 int i = 0;//Loop Used
+
 for (i = getDigit(iNumber); i > 0; i--)
     {
     iEachNumber[10 - i] = iNumber % 10;
@@ -32,6 +35,7 @@ void reverseArray(int *arriArray)
 {
 int iPosition = 0;
 int i = 0;//Loop Used
+
 for (i = 0; i < 10; i++)
     {
     if (arriArray[i] != -1)
