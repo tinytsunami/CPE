@@ -4,10 +4,10 @@ int main(void)
 {
 char strNumber[30];
 int arriNumber[30];
-int iNumberSunA = 0;
-int iNumberSunB = 0;
-int iNumberDifference = 0;
-int i = 0;//Loop used
+int iNumberSunA;
+int iNumberSunB;
+int iNumberDifference;
+int i;//Loop used
 
 while (scanf_s("%s", strNumber, 30))
     {

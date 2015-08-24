@@ -2,12 +2,12 @@
 
 int main()
 {
-int iTestCase = 0;
-int iSum = 0;
-int iDifference = 0;
-int iTeamScoresA = 0;
-int iTeamScoresB = 0;
-int i = 0;//Loop used;
+int iTestCase;
+int iSum;
+int iDifference;
+int iTeamScoresA;
+int iTeamScoresB;
+int i;//Loop used;
 
 scanf_s("%d", &iTestCase);
 for (i = 0; i < iTestCase; i++)

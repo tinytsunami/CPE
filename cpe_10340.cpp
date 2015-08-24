@@ -4,10 +4,10 @@ int main()
 {
 char strCodeS[99];
 char strCodeT[99];
-int iCodeTPosition = 0;
+int iCodeTPosition;
 bool bFlag = false;
-int iIndex = 0;
-int i = 0;//Loop Used
+int iIndex;
+int i;//Loop Used
 
 while (gets_s(strCodeS))
     {

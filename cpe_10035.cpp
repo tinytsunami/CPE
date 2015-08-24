@@ -10,7 +10,7 @@ return *arriNumber;
 
 int getDigit(int iNumber)
 {
-int iDigit = 0;
+int iDigit;
 
 while ((iNumber / pow(10, iDigit)) >= 1)
     iDigit++;
@@ -19,7 +19,7 @@ return iDigit;
 
 void createEachNumber(int *iEachNumber, int iNumber)
 {
-int i = 0;//Loop Used
+int i;//Loop Used
 
 for (i = getDigit(iNumber); i > 0; i--)
     {
@@ -33,8 +33,8 @@ for (i = 0; i < 10; i++)
 
 void reverseArray(int *arriArray)
 {
-int iPosition = 0;
-int i = 0;//Loop Used
+int iPosition;
+int i;//Loop Used
 
 for (i = 0; i < 10; i++)
     {
@@ -54,13 +54,13 @@ for (i = 0; i < 10; i++)
 
 int main(void)
 {
-int iNumberA = 0;
-int iNumberB = 0;
+int iNumberA;
+int iNumberB;
 int iEachNumberA[10];
 int iEachNumberB[10];
-int iCarryCount = 0;
-int arriCarryTemp[2] = { 0, 0 };
-int i = 0;//Loop Used
+int iCarryCount;
+int arriCarryTemp[2];
+int i;//Loop Used
 
 while (scanf_s("%d %d", &iNumberA, &iNumberB))
     {

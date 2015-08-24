@@ -2,8 +2,8 @@
 
 int wordCount(char word, char page[])
 {
-int iCount = 0;
-int i = 0;//Loop Used
+int iCount;
+int i;//Loop Used
 
 for (i = 0; i < 99; i++)
     if (page[i] == word || page[i] == (char)((int)word+32))
@@ -13,13 +13,13 @@ return iCount;
 
 int main(void)
 {
-int iLineCount = 0;
+int iLineCount;
 int iWordCount[26];
-int strSaveString[26][2] = {};
-int iMaxNumber = 0;
-char strPage[30][99] = {};
-int i = 0; //Loop Used
-int j = 0; //Loop Used
+int strSaveString[26][2];
+int iMaxNumber;
+char strPage[30][99];
+int i; //Loop Used
+int j; //Loop Used
 
 for (i = 0; i < 26; i++)
     iWordCount[i] = 0;
