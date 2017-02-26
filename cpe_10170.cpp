@@ -2,7 +2,6 @@
 // 標頭檔
 //============================================================
 #include <iostream>
-#include <cmath>
 //============================================================
 // 命名空間
 //============================================================
@@ -12,13 +11,18 @@ using namespace std;
 //============================================================
 int main()
 {
-//資料A、B
-long int iNumberA;
-long int iNumberB;
+long long int iTours;		//旅行團人數
+long long int iDays;		//待的日子
+long long int iToursTemp;	//暫存旅行團人數
 
-//直接用數學abs回傳
-while (cin >> iNumberA >> iNumberB)
-    cout << abs(iNumberA - iNumberB) << endl;
+//Process
+while (cin >> iTours >> iDays)
+	{
+	iToursTemp = iTours;
+	while (iToursTemp < iDays)
+		iToursTemp += ++iTours;
+	cout << iTours << endl;
+	}
 
 return 0;
 }

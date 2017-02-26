@@ -7,28 +7,28 @@
 //============================================================
 int main(void)
 {
-// 把數字當字串的字元陣列
-char strNumber[30];
-// 把數字當數字陣列的數組
-int arriNumber[30];
-// 分別紀錄奇數位和、偶數位和
-int iNumberSumA;
+char strNumber[30];     // 把數字當字串的字元陣列
+int arriNumber[30];     // 把數字當數字陣列的數組
+int iNumberSumA;        // 分別紀錄奇數位和、偶數位和
 int iNumberSumB;
-// 紀錄奇位和、偶位和的差
-int iNumberDifference;
-int i;//Loop used
+int iNumberDifference;  // 紀錄奇位和、偶位和的差
+int iLenght;            //用於迴圈紀錄長度
+int i;                  //Loop used
 
 // 先把數字拿來
-while (scanf_s("%s", strNumber, 30))
+while (scanf("%s", strNumber, 30))
     {
     // 是零就結束
     if (strNumber[0] == '0')
        break;
+
     // 歸零一下
     iNumberSumA = 0;
     iNumberSumB = 0;
+
     // 遍歷字元陣列
-    for (i = 0; i < sizeof(strNumber); i++)
+    iLenght = sizeof(strNumber);
+    for (i = 0; i < iLenght; i++)
         {
         // 變成ASCII並塞到另一個陣列
         arriNumber[i] = (int)strNumber[i];
@@ -48,6 +48,7 @@ while (scanf_s("%s", strNumber, 30))
                 }
             }
         }
+
     // 取得奇、偶數和的差
     iNumberDifference = (iNumberSumA - iNumberSumB) * (iNumberSumA >= iNumberSumB ? 1 : -1);
     // 判斷是否為11的倍數
@@ -56,9 +57,10 @@ while (scanf_s("%s", strNumber, 30))
     else
         printf("%s is not a multiple of 11.\n", strNumber);
     // 在下筆測資前，先歸零一下
-    for (i = 0; i < sizeof(strNumber); i++)
+    for (i = 0; i < iLenght; i++)
         strNumber[i] = '0';
     }
+
 return 0;
 }
 

@@ -23,20 +23,13 @@ return iCount;
 //============================================================
 int main(void)
 {
-//總行數
-int iLineCount;
-//字母的總數
-int iWordCount[26];
-//整理後的字母陣列
-//二維其一是存字母ASCII、其二是總數
-int strSaveString[26][2];
-//依題目要求，需要由大到小排列
-//用來儲存最大數量的字母個數
-int iMaxNumber;
-//用來暫存題目的每一行文字
-char strPage[30][99];
-int i; //Loop Used
-int j; //Loop Used
+int iLineCount;             //總行數
+int iWordCount[26];         //字母的總數
+int strSaveString[26][2];   //整理後的字母陣列（[0]=>ASCII、[1]=>計數）
+int iMaxNumber;             //用來儲存最大數量的字母個數
+char strPage[30][99];       //用來暫存題目的每一行文字
+int i;                      //Loop Used
+int j;                      //Loop Used
 
 //由於測資易發生雜訊，故將陣列規零
 for (i = 0; i < 26; i++)

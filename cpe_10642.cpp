@@ -8,17 +8,19 @@
 //============================================================
 using namespace std;
 //============================================================
+// ？？？
+//============================================================
+int getF(int x,int y)
+{
+	int iTemp;
+	iTemp = ceil(sqrt(pow(x,2) + pow(y,2)));
+	return (1 + iTemp) * iTemp / 2 + iTemp;
+}
+//============================================================
 // 主程式
 //============================================================
-int main()
+int main() 
 {
-//資料A、B
-long int iNumberA;
-long int iNumberB;
-
-//直接用數學abs回傳
-while (cin >> iNumberA >> iNumberB)
-    cout << abs(iNumberA - iNumberB) << endl;
-
-return 0;
+	cout << getF(0,2);
+	return 0;
 }

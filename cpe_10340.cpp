@@ -7,17 +7,12 @@
 //============================================================
 int main()
 {
-//字串S
-char strCodeS[99];
-//字串T
-char strCodeT[99];
-//暫存字串T的位置
-int iCodeTPosition;
-//偵測空白字元的旗標
-bool bFlag = false;
-//搜尋用的位置變數
-int iIndex;
-int i;//Loop Used
+char strCodeS[99];  //字串S
+char strCodeT[99];  //字串T
+int iCodeTPosition; //暫存字串T的位置
+bool bFlag = false; //偵測空白字元的旗標
+int iIndex;         //搜尋用的位置變數
+int i;              //Loop Used
 
 //所有資料先由字串S先接收
 while (gets_s(strCodeS))

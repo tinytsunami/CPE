@@ -7,17 +7,12 @@
 //============================================================
 int main()
 {
-//測資數
-int iTestCase;
-//和
-int iSum;
-//差
-int iDifference;
-//分數A
-int iTeamScoresA;
-//分數B
-int iTeamScoresB;
-int i;//Loop used;
+int iTestCase;      //測資數
+int iSum;           //和
+int iDifference;    //差
+int iTeamScoresA;   //分數A
+int iTeamScoresB;   //分數B
+int i;              //Loop used
 
 //數入測資數
 scanf_s("%d", &iTestCase);
